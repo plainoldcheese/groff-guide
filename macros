@@ -1,0 +1,48 @@
+\# easier headings
+\# usage .XN 1 "Some Kinda Heading"
+.de XN \\$1
+\\$2
+.XS
+\\$2
+.XE
+..
+
+\# auto numbering lists
+\# note: you must reset list_index to 1 everytim you  make a new list
+\# usage
+\# .nl
+\# item one
+\# .nl
+\# item two
+\# .nl
+\# item three
+
+.nr list_index 1
+
+.de nl
+.IP \\n[list_index]
+.nr list_index +1
+..
+
+\# bulletted lists
+\# usage
+\# .bl
+\# item one
+\# .bl
+\# item two
+\# .bl
+\# item three
+
+.de bl
+.IP \(bu 2
+..
+
+\# figure auto numbering and captions
+\# usage: .figcap "The caption text"
+
+.nr fig_index 1
+.de figcap
+.ce
+Figure \\n[fig_index] \\$1
+.nr fig_num +1
+..
