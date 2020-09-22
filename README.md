@@ -32,3 +32,4 @@ This document will not go into depth on advanced features of groff like macros b
 - convert into a short document that expalins everythin on starting with groff.
 - strip back the example document and split into a few samller ones with increasing complexity
 - use more meaningful text in the examples
+- better organization of the sections
