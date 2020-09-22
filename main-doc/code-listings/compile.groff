@@ -1,0 +1,10 @@
+
+.DS I
+.fam C
+\f[CI]\m[brown]#!/bin/sh\m[]\fP
+groff \f[CB]\m[blue]test\m[]\fP\m[darkred].\m[]ms -ms -s -e -p -t  -R -Tps \m[darkred]>\m[] \f[CB]\m[blue]test\m[]\fP\m[darkred].\m[]ps\m[darkred];\m[]
+ps2pdf \f[CB]\m[blue]test\m[]\fP\m[darkred].\m[]ps \f[CB]\m[blue]test\m[]\fP\m[darkred].\m[]pdf\m[darkred];\m[]
+rm \f[CB]\m[blue]test\m[]\fP\m[darkred].\m[]ps\m[darkred];\m[]
+
+.fam
+.DE

@@ -1,0 +1,43 @@
+\# check man ref for more options
+\# note: it is not actually important to add keywords as refer will perform matching on the string you add for references.
+
+%K kernighan-eqn-1978
+%D 1978
+%T Typesetting Mathematics, User's Guide (Second Edition).
+%A Brian Kernighan
+%A Lorinda Cherry
+
+%K groff-man-page
+%T The GNU Troff Manual
+%D 2018
+%O "https://www.gnu.org/software/groff/manual/html_node/index.html#SEC_Contents"
+%A Larry Kollar
+%A James Clark
+%A Eric Allman
+%A Susan G. Kleinmann
+
+%K source-highlight
+%T GNU Source Highlight
+%A Lorenzo Bettini
+%D 2001
+
+%K original-troff-docs
+%T troff.org
+%A Ralph Corderoy
+%D 2012
+%O "https://troff.org/papers.html"
+
+%A Dale Dougherty
+%A Tim O'Reilly
+%T Unix Text Processing
+%I Hayden Books
+%G ISBN 0-672-46291-5
+%O "https://www.oreilly.com/openbook/utp/"
+
+%A Dean Allen Provins
+%I University of Calgary
+%T The Groff and Friends HOWTO
+%O "https://www.troff.org/TheGroffFriendsHowto.pdf"
+
+\# groff luke smith "https://www.youtube.com/playlist?list=PL-p5XmQHB_JRe2YeaMjPTKXSc5FqJZ_km"
+\# gavin groff "https://www.youtube.com/playlist?list=PLknodeJt-I5FgZ5VwT-BHda_lu3dYrMeJ"

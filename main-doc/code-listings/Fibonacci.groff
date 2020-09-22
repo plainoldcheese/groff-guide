@@ -1,0 +1,12 @@
+
+.DS I
+.fam C
+fib \m[darkred]=\m[] \m[darkred][\m[]\m[purple]0\m[]\m[darkred],\m[]\m[purple]1\m[]\m[darkred]]\m[]
+i \m[darkred]=\m[] \m[purple]1\m[]
+\f[CB]\m[blue]print\m[]\fP\m[darkred](\m[]fib\m[darkred][\m[]\m[purple]0\m[]\m[darkred]])\m[]
+\f[CB]\m[blue]while\m[]\fP fib\m[darkred][\m[]i\m[darkred]]<=\m[]\m[purple]842040\m[]\m[darkred]:\m[]
+    \f[CB]\m[blue]print\m[]\fP\m[darkred](\m[]fib\m[darkred][\m[]i\m[darkred]])\m[]
+    i \m[darkred]+=\m[]\m[purple]1\m[]
+    fib\m[darkred].\m[]\f[CB]\m[black]append\m[]\fP\m[darkred](\m[]fib\m[darkred][\m[]i\m[darkred]-\m[]\m[purple]1\m[]\m[darkred]]\m[] \m[darkred]+\m[] fib\m[darkred][\m[]i\m[darkred]-\m[]\m[purple]2\m[]\m[darkred]])\m[]
+.fam
+.DE

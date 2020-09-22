@@ -21,7 +21,7 @@
 .nr list_index 1
 
 .de nl
-.IP \\n[list_index]
+.IP \\n[list_index] 2
 .nr list_index +1
 ..
 
@@ -44,6 +44,6 @@
 .nr fig_index 1
 .de figcap
 .ce
-Figure \\n[fig_index] \\$1
+Figure \\n[fig_index]: \\$1
 .nr fig_num +1
 ..

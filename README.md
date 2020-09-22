@@ -20,9 +20,15 @@ This document will not go into depth on advanced features of groff like macros b
 - [ ] headers and footers
 - [ ] page numbering
 - [ ] basic formatting (bold, italic, etc)
-- [ ] code listings
+- [x] code listings
 - [ ] tables
 - [x] table of contents
 - [x] compilation and PDF output
-- [ ] a short section containing helpful resource
+- [x] a short section containing helpful resource
 - [ ] a simple guide on how to optimize your workflow and layout a project folder for a document
+
+## Long Term Goals
+
+- convert into a short document that expalins everythin on starting with groff.
+- strip back the example document and split into a few samller ones with increasing complexity
+- use more meaningful text in the examples
