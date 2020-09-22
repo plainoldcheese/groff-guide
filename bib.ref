@@ -1,0 +1,10 @@
+\# check man ref for more options
+\# note: it is not actually important to add keywords as refer will perform matching on the string you add for references.
+
+%K kernighan-eqn-1978
+%T Typesetting Mathematics, User's Guide (Second Edition).
+%A Brian Kernighan
+%A Lorinda Cherry
+%D 1978
+
+

@@ -1,6 +1,7 @@
 \# easier headings
 \# usage .XN 1 "Some Kinda Heading"
-.de XN \\$1
+.de XN
+.NH \\$1
 \\$2
 .XS
 \\$2

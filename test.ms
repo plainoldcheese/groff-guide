@@ -8,6 +8,18 @@
 \# if you want to keep your macros in a sepaarate file you can import them like this
 \# .so macros
 
+\# settings for refer
+\# using the settings here means you dont have to have any command line options
+\# be sure to check man refer to see for more options
+.R1
+no-label-in-reference
+accumulate
+move-punctuation
+database bib.ref
+.R2
+
+
+\# coverpage
 .TL
 The Title
 
@@ -72,8 +84,11 @@ Equations
 Equations
 .XE
 
-.LP
+.PP
 We can also type equations using EQN which is very simple and most of the syntax follows as you would say them. When in doubt use curly braces to isolate terms before dealing with them further.
+.[
+kernighan eqn 1978
+.]
 Below are some examples
 
 .LP
@@ -139,6 +154,7 @@ command, found in
 After converting your images to eps files they can be included like below.
 
 .PSPIC "pic/test.eps"
+
 .DS
 .ce
 Figure 1: A rare pepe.
@@ -325,6 +341,43 @@ Note this macro implementation requires that you declare
 before starting a new list otherwise the numbers will carry on from the previous list.
 
 .NH 1
+Compilation
+.XS
+Compilation
+.XE
+
+.LP
+The command I have been using to compile and generate a pdf including images, PIC graphics, equations, references adn tables is:
+
+.DS B
+.CW "$ refer file.ms | groff -ms -e -p -t -Tps > file.ps; ps2pdf file.ps file.pdf"
+.DE
+
+.PP
+this runs refer on the document and pipes the result into groff.
+Groff is then run with the ms macros and told to preprocess using EQN, PIC, and TBL and output to postcript.
+The resulting postrict file is then converted to pdf using the ps2pdf command.
+
+.LP
+You could also add a command to remove the leftover postscript file if you do not need it.
+The contents of a
+.CW compile.sh
+script might for example be
+
+.DS B
+.CW "#!/bin/sh"
+.CW "refer file.ms | groff -ms -e -p -t -Tps > file.ps;"
+.CW "ps2pdf file.ps file.pdf;"
+.CW "rm file.ps"
+.DE
+
+.LP
+The macros I use are sourced at the beginning of the groff document and the refer option are also set in the document itself.
+This makes the compile command a little bit shorter and allows me to keep different bib and macro files per document (although i usually keep one large one and use the same one every time, I am still in the process of converting my LaTeX bib into refer.)
+
+.bp
+
+.NH 1
 References and Documentation
 .XS
 References and Documentation
@@ -357,7 +410,10 @@ If you would like to look at the original troff documentation you can have a loo
 .CW "https://troff.org/papers.html"
 .DE
 
-
+\# prints all accumulated references up to this point
+.[
+$LIST$
+.]
 
 \# Generate Table of Contents (will by default generate at end of document)
 .TC
