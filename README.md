@@ -10,23 +10,6 @@ This document will not go into depth on advanced features of groff like macros b
 
 ## TO DO
 
-<<<<<<< Updated upstream
-- [x] lists and bullets
-- [x] images
-- [x] figures and diagrams using PIC
-- [x] equations
-- [ ] references
-- [x] blockquotes
-- [x] coverpage features
-- [ ] headers and footers
-- [ ] page numbering
-- [ ] basic formatting (bold, italic, etc)
-- [ ] code listings
-- [ ] table of contents
-- [ ] compilation and pdf output
-- [ ] a short section containing helpful resource
-- [ ] a simple guide on how to optimize your workflow and layout a project folder for a document
-=======
 [x] lists and bullets
 [x] images
 [x] figures and diagrams using PIC
@@ -43,4 +26,3 @@ This document will not go into depth on advanced features of groff like macros b
 [x] compilation and PDF output
 [ ] a short section containing helpful resource
 [ ] a simple guide on how to optimize your workflow and layout a project folder for a document
->>>>>>> Stashed changes
